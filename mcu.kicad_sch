@@ -3525,6 +3525,28 @@
 			)
 		)
 	)
+	(global_label "VREG_3.3V"
+		(shape input)
+		(at 204.47 110.49 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "76361f33-cae6-43ef-ae85-d97e34f6fc49")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 217.3128 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "D-"
 		(shape input)
 		(at 220.98 71.12 0)
@@ -3648,28 +3670,6 @@
 		(uuid "c7a0c564-34a3-4626-b3ec-f03b61dbb19b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 138.2703 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VREG_5V"
-		(shape input)
-		(at 204.47 110.49 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c9ee42de-e719-4855-8449-6bafd5b7bee2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 215.4985 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
