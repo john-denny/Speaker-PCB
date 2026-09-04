@@ -2430,22 +2430,20 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at -7.62 23.622 0)
+			(property "Reference" "J2"
+				(at 0 27.94 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
 			(property "Value" "UJ20-C-H-G-SMT-1-P16-TR"
-				(at -7.62 -23.622 0)
+				(at 0 25.4 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
 			(property "Footprint" "UJ20-C-H-G-SMT-1-P16-TR:SAMESKY_UJ20-C-H-G-SMT-1-P16-TR"
@@ -2598,8 +2596,8 @@
 			)
 			(symbol "UJ20-C-H-G-SMT-1-P16-TR_0_0"
 				(rectangle
-					(start -7.62 -22.86)
-					(end 7.62 22.86)
+					(start -7.62 22.86)
+					(end 7.62 -22.86)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -2638,78 +2636,6 @@
 						)
 					)
 					(number "B4_A9"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 15.24 180)
-					(length 5.08)
-					(name "DN1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "A7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 12.7 180)
-					(length 5.08)
-					(name "DP1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "A6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 7.62 180)
-					(length 5.08)
-					(name "DN2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "B7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 5.08 180)
-					(length 5.08)
-					(name "DP2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "B6"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -2894,6 +2820,80 @@
 						)
 					)
 					(number "SH4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "UJ20-C-H-G-SMT-1-P16-TR_1_0"
+				(pin passive line
+					(at 12.7 15.24 180)
+					(length 5.08)
+					(name "D_N"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "A7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 12.7 180)
+					(length 5.08)
+					(name "D_P"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "A6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 7.62 180)
+					(length 5.08)
+					(name "D2_N"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "B7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 5.08 180)
+					(length 5.08)
+					(name "D2_P"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "B6"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -5597,7 +5597,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 186.69 93.98 0)
 			(effects
 				(font
@@ -5900,7 +5900,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 224.79 41.91 0)
 			(effects
 				(font
@@ -6098,7 +6098,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 59.69 138.43 0)
 			(effects
 				(font
@@ -6860,7 +6860,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 181.61 44.45 0)
 			(effects
 				(font
@@ -8034,7 +8034,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 171.45 49.53 0)
 			(effects
 				(font
@@ -8793,7 +8793,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 111.76 69.85 0)
 			(effects
 				(font
@@ -9391,7 +9391,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 212.09 93.98 0)
 			(effects
 				(font
@@ -9523,7 +9523,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 323.85 106.68 0)
 			(effects
 				(font
@@ -10259,7 +10259,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 90.17 36.83 0)
 			(effects
 				(font
