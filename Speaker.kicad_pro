@@ -58,7 +58,16 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "lib_footprint_mismatch|238180000|68012500|e944f68a-6f05-4b19-a545-9ce607b9362c|00000000-0000-0000-0000-000000000000",
+          "Made some modifications to individual pin clearances"
+        ],
+        [
+          "lib_footprint_mismatch|246599250|89867500|bcc375a8-8d87-46c9-90ee-0d344ffd28f7|00000000-0000-0000-0000-000000000000",
+          "Made some modifications to individual pin clearances"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -102,7 +111,7 @@
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
@@ -500,10 +509,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../../Desktop/Export/Speaker.step",
       "svg": "",
       "vrml": ""
     },
