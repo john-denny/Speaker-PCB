@@ -20415,7 +20415,7 @@
 	(segment
 		(start 140.308274 111.116726)
 		(end 138.133274 111.116726)
-		(width 0.2)
+		(width 0.4)
 		(layer "F.Cu")
 		(net 2)
 		(uuid "3934599b-0d61-4610-9850-f75720c05b3c")
@@ -20431,7 +20431,7 @@
 	(segment
 		(start 138.033274 109.966783)
 		(end 138.033274 111.016726)
-		(width 0.2)
+		(width 0.4)
 		(layer "F.Cu")
 		(net 2)
 		(uuid "5bfc2c98-23cf-4f00-bdbd-44f75d4bfe32")
@@ -20463,7 +20463,7 @@
 	(segment
 		(start 139.883274 114.816726)
 		(end 139.883274 111.541726)
-		(width 0.2)
+		(width 0.4)
 		(layer "F.Cu")
 		(net 2)
 		(uuid "8c30567f-ffc7-49e1-8d70-6f6092c98021")
@@ -20487,7 +20487,7 @@
 	(segment
 		(start 145.945774 105.416726)
 		(end 142.583331 105.416726)
-		(width 0.2)
+		(width 0.4)
 		(layer "F.Cu")
 		(net 2)
 		(uuid "cbf5873f-e60f-4349-802b-eb9eb86a3804")
@@ -20503,7 +20503,7 @@
 	(segment
 		(start 142.583331 105.416726)
 		(end 138.033274 109.966783)
-		(width 0.2)
+		(width 0.4)
 		(layer "F.Cu")
 		(net 2)
 		(uuid "daf22d81-a5ef-4c70-9827-806383bc3e96")
@@ -20527,7 +20527,7 @@
 	(segment
 		(start 146.883274 104.479226)
 		(end 145.945774 105.416726)
-		(width 0.2)
+		(width 0.4)
 		(layer "F.Cu")
 		(net 2)
 		(uuid "f883b484-b925-44d1-9282-80be1c6a76c4")
@@ -20583,7 +20583,7 @@
 	(segment
 		(start 146.883274 108.354226)
 		(end 145.945774 107.416726)
-		(width 0.2)
+		(width 0.4)
 		(layer "F.Cu")
 		(net 3)
 		(uuid "4632b3c3-cdf0-4bc1-ba6f-e94656e56eaa")
@@ -20615,7 +20615,7 @@
 	(segment
 		(start 143.468274 109.904226)
 		(end 143.468274 108.166726)
-		(width 0.2)
+		(width 0.4)
 		(layer "F.Cu")
 		(net 3)
 		(uuid "5e6639e5-dc0d-406d-bf59-51573c7e1771")
@@ -20655,7 +20655,7 @@
 	(segment
 		(start 143.468274 108.166726)
 		(end 144.130774 107.504226)
-		(width 0.2)
+		(width 0.4)
 		(layer "F.Cu")
 		(net 3)
 		(uuid "8a6de9cc-8d35-4e87-a572-5146aa9220ef")
@@ -20695,7 +20695,7 @@
 	(segment
 		(start 145.820774 107.541726)
 		(end 144.218274 107.541726)
-		(width 0.2)
+		(width 0.4)
 		(layer "F.Cu")
 		(net 3)
 		(uuid "fdad39df-ce6e-4496-8e83-5a19da7fe9e6")
