@@ -1,0 +1,164 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-24T15:37:11+0100",
+    "kicad_version": "9.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/c0597dd0-4d0e-452e-9261-43f7671870ce",
+            "violations": [
+                {
+                    "description": "Symbol 'CH340X' doesn't match copy in library 'Interface_USB'",
+                    "items": [
+                        {
+                            "description": "Symbol U5 [CH340X]",
+                            "pos": {
+                                "x": 1.8796,
+                                "y": 0.7112
+                            },
+                            "uuid": "fa960880-f763-4a34-8a14-51bd4347b869"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'MAX98357A' doesn't match copy in library 'Audio'",
+                    "items": [
+                        {
+                            "description": "Symbol U7 [MAX98357A]",
+                            "pos": {
+                                "x": 2.286,
+                                "y": 1.4224
+                            },
+                            "uuid": "379548b9-e728-44e0-8b14-fd0d89481263"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'MCP73871' doesn't match copy in library 'Battery_Management'",
+                    "items": [
+                        {
+                            "description": "Symbol U2 [MCP73871]",
+                            "pos": {
+                                "x": 0.6858,
+                                "y": 0.5969
+                            },
+                            "uuid": "aab6c23e-a189-4660-ba66-4912362d5e68"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'UJ20-C-H-G-SMT-1-P16-TR' doesn't match copy in library 'UJ20-C-H-G-SMT-1-P16-TR'",
+                    "items": [
+                        {
+                            "description": "Symbol J1 [UJ20-C-H-G-SMT-1-P16-TR]",
+                            "pos": {
+                                "x": 0.4064,
+                                "y": 1.6129
+                            },
+                            "uuid": "1f53dbe5-025b-4ce7-9f91-e738a749f610"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Horizontal Wire, length 0.0127 mm",
+                            "pos": {
+                                "x": 0.5969,
+                                "y": 1.6891
+                            },
+                            "uuid": "f5b7c8b7-dbc8-4349-bb81-e9507292a5ef"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Horizontal Wire, length 0.0127 mm",
+                            "pos": {
+                                "x": 0.5207,
+                                "y": 1.7653
+                            },
+                            "uuid": "84bdef14-7597-468e-8c4c-9cb4533da230"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Symbol 'MAX17048G_T10' doesn't match copy in library 'MAX17048G+T10'",
+                    "items": [
+                        {
+                            "description": "Symbol U1 [MAX17048G_T10]",
+                            "pos": {
+                                "x": 2.0955,
+                                "y": 0.4191
+                            },
+                            "uuid": "26f087b1-49a3-4346-9233-df29a6085a14"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                }
+            ]
+        },
+        {
+            "path": "/Power/",
+            "uuid_path": "/c0597dd0-4d0e-452e-9261-43f7671870ce/dc3e570a-2150-44e4-a8d0-d06363be833f",
+            "violations": []
+        },
+        {
+            "path": "/MCU/",
+            "uuid_path": "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e",
+            "violations": [
+                {
+                    "description": "Pins of type Unspecified and Power input are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U7 Pin 17 [PAD, Unspecified, Line]",
+                            "pos": {
+                                "x": 2.3114,
+                                "y": 1.5494
+                            },
+                            "uuid": "63aeb80c-a7f0-4211-8f59-04b608b710f1"
+                        },
+                        {
+                            "description": "Symbol U7 Pin 3 [GND, Power input, Line]",
+                            "pos": {
+                                "x": 2.2606,
+                                "y": 1.5494
+                            },
+                            "uuid": "33cd5cc7-5141-4698-abe4-5bd1e44d07e4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        },
+        {
+            "path": "/sound/",
+            "uuid_path": "/c0597dd0-4d0e-452e-9261-43f7671870ce/5b9472e1-2611-486d-87b4-abc20ee8f365",
+            "violations": []
+        },
+        {
+            "path": "/ui/",
+            "uuid_path": "/c0597dd0-4d0e-452e-9261-43f7671870ce/f60e9e7e-7bfc-4d47-b2ab-c74af649a450",
+            "violations": []
+        }
+    ],
+    "source": "Speaker.kicad_sch"
+}

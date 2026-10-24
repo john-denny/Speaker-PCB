@@ -1,0 +1,71 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-24T15:39:17+0100",
+    "kicad_version": "9.0.7",
+    "schematic_parity": [],
+    "source": "Speaker.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Footprint 'ESP32-WROOM-32' does not match copy in library 'RF_Module'.",
+            "items": [
+                {
+                    "description": "Footprint U6",
+                    "pos": {
+                        "x": 125.1,
+                        "y": 58.24
+                    },
+                    "uuid": "5ada1407-cb1c-47d9-98cd-75d0d2160de0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SON50P200X200X80-9N' does not match copy in library 'MAX17048G_T10'.",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 122.015,
+                        "y": 76.45
+                    },
+                    "uuid": "686bf9b9-75e1-4aea-bcd2-e06ab9a89887"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SAMESKY_UJ20-C-H-G-SMT-1-P16-TR' does not match copy in library 'UJ20-C-H-G-SMT-1-P16-TR'.",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 153.68,
+                        "y": 71.49
+                    },
+                    "uuid": "a786b759-c92c-4c73-b874-9662d75770f8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm' does not match copy in library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 136.025,
+                        "y": 80.225
+                    },
+                    "uuid": "ecfc2c2e-5655-4e61-8cf3-632639c0c4e0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        }
+    ]
+}

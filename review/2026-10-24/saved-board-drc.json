@@ -1,0 +1,200 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-24T15:37:14+0100",
+    "kicad_version": "9.0.7",
+    "schematic_parity": [],
+    "source": "Speaker.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Clearance violation (zone clearance 0.5000 mm; actual 0.0566 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 134.5,
+                        "y": 87.01875
+                    },
+                    "uuid": "fd174a23-198d-4113-9ce1-3fa34a479ebd"
+                },
+                {
+                    "description": "Zone [VREG_3.3V] on In1.Cu, priority 0",
+                    "pos": {
+                        "x": 156.2,
+                        "y": 41.22
+                    },
+                    "uuid": "35f9e90c-248e-4446-a482-536c8035c60a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2066 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 134.5,
+                        "y": 87.01875
+                    },
+                    "uuid": "fd174a23-198d-4113-9ce1-3fa34a479ebd"
+                },
+                {
+                    "description": "Zone [VREG_3.3V] on In1.Cu, priority 0",
+                    "pos": {
+                        "x": 156.2,
+                        "y": 41.22
+                    },
+                    "uuid": "35f9e90c-248e-4446-a482-536c8035c60a"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rectangle on Edge.Cuts",
+                    "pos": {
+                        "x": 101.66,
+                        "y": 42.25
+                    },
+                    "uuid": "965dbcca-8e61-4ea3-ac49-a9029c73473c"
+                },
+                {
+                    "description": "Reference field of TP11",
+                    "pos": {
+                        "x": 153.3125,
+                        "y": 52.602
+                    },
+                    "uuid": "774664d1-db1f-4ae5-96ce-b832ab23954c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Footprint 'ESP32-WROOM-32' does not match copy in library 'RF_Module'.",
+            "items": [
+                {
+                    "description": "Footprint U6",
+                    "pos": {
+                        "x": 125.1,
+                        "y": 58.24
+                    },
+                    "uuid": "5ada1407-cb1c-47d9-98cd-75d0d2160de0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SON50P200X200X80-9N' does not match copy in library 'MAX17048G_T10'.",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 122.015,
+                        "y": 76.45
+                    },
+                    "uuid": "686bf9b9-75e1-4aea-bcd2-e06ab9a89887"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SAMESKY_UJ20-C-H-G-SMT-1-P16-TR' does not match copy in library 'UJ20-C-H-G-SMT-1-P16-TR'.",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 153.68,
+                        "y": 71.49
+                    },
+                    "uuid": "a786b759-c92c-4c73-b874-9662d75770f8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm' does not match copy in library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 136.025,
+                        "y": 80.225
+                    },
+                    "uuid": "ecfc2c2e-5655-4e61-8cf3-632639c0c4e0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R12",
+                    "pos": {
+                        "x": 139.6,
+                        "y": 77.2
+                    },
+                    "uuid": "ba371c9c-8e5c-4a2a-84c2-4d50f3a06c22"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C18",
+                    "pos": {
+                        "x": 104.04,
+                        "y": 74.93
+                    },
+                    "uuid": "cca14727-e7f5-4139-8acd-e1881c3aec2e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of U3",
+                    "pos": {
+                        "x": 120.2,
+                        "y": 94.3
+                    },
+                    "uuid": "06cdcde2-2504-4d6e-9c7d-6374dba3fd75"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R24",
+                    "pos": {
+                        "x": 152.98,
+                        "y": 57.53
+                    },
+                    "uuid": "c359ebd0-47b3-4543-9bad-00365a72efa8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

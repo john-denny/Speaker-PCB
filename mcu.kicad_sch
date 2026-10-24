@@ -9,20 +9,22 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -8.89 11.43 0)
+			(property "Reference" "U7"
+				(at 2.1433 15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "MAX98357A"
-				(at 10.16 11.43 0)
+				(at 2.1433 12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" "Package_DFN_QFN:TQFN-16-1EP_3x3mm_P0.5mm_EP1.23x1.23mm"
@@ -362,7 +364,7 @@
 				(pin output line
 					(at 12.7 7.62 180)
 					(length 2.54)
-					(name "OUTP"
+					(name "OUT+"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -380,7 +382,7 @@
 				(pin output line
 					(at 12.7 5.08 180)
 					(length 2.54)
-					(name "OUTN"
+					(name "OUT-"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2631,6 +2633,12 @@
 		(uuid "3773b27b-440b-486c-90d6-248bfafd81ee")
 	)
 	(junction
+		(at 243.84 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b02deb9-f712-4b40-805b-505f12501cca")
+	)
+	(junction
 		(at 208.28 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2671,6 +2679,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b17d5917-53aa-4369-a792-150f64e9746f")
+	)
+	(junction
+		(at 243.84 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b9fdd571-ca71-457d-bbab-9875e9c556cc")
 	)
 	(junction
 		(at 228.6 118.11)
@@ -2821,6 +2835,16 @@
 			(type default)
 		)
 		(uuid "13c6d925-21d6-411e-b958-a9bb0d8c6fa1")
+	)
+	(wire
+		(pts
+			(xy 243.84 134.62) (xy 246.38 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "185f8786-ac21-46da-915d-861c700e5a05")
 	)
 	(wire
 		(pts
@@ -3004,16 +3028,6 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 134.62) (xy 241.3 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44c1bfd4-53c2-4758-ac4a-0db6854be105")
-	)
-	(wire
-		(pts
 			(xy 215.9 73.66) (xy 220.98 73.66)
 		)
 		(stroke
@@ -3194,7 +3208,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 137.16) (xy 241.3 137.16)
+			(xy 246.38 137.16) (xy 243.84 137.16)
 		)
 		(stroke
 			(width 0)
@@ -3364,6 +3378,16 @@
 	)
 	(wire
 		(pts
+			(xy 243.84 134.62) (xy 241.3 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8009c40-3010-45cd-bb8f-4a61046843c3")
+	)
+	(wire
+		(pts
 			(xy 118.11 96.52) (xy 121.92 96.52)
 		)
 		(stroke
@@ -3401,6 +3425,16 @@
 			(type default)
 		)
 		(uuid "ea8efbf6-8bc8-4906-a7a8-ddf47214ac7e")
+	)
+	(wire
+		(pts
+			(xy 243.84 137.16) (xy 241.3 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecf84385-2711-4a45-b4bd-5dae9e1ecc90")
 	)
 	(wire
 		(pts
@@ -3462,6 +3496,26 @@
 		)
 		(uuid "f7a2ae53-ecd2-4d88-91d6-47b81ba161a0")
 	)
+	(wire
+		(pts
+			(xy 243.84 130.81) (xy 243.84 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f959ca7b-e2ad-4844-9e50-0c7531438eb9")
+	)
+	(wire
+		(pts
+			(xy 243.84 142.24) (xy 243.84 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faa9af19-5335-4fb5-b3d6-5cce3782cd50")
+	)
 	(label "AMP_DIN"
 		(at 196.85 134.62 180)
 		(effects
@@ -3471,6 +3525,16 @@
 			(justify right bottom)
 		)
 		(uuid "0a5ab017-a811-42f1-9771-fe3aefde1d26")
+	)
+	(label "Speaker+"
+		(at 243.84 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "20117ea3-416f-4560-a54a-79725806f3fe")
 	)
 	(label "RX_UART"
 		(at 165.1 78.74 180)
@@ -3541,6 +3605,16 @@
 			(justify left bottom)
 		)
 		(uuid "93426c62-e3d8-4f96-bb22-93ff599d41fe")
+	)
+	(label "Speaker-"
+		(at 243.84 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "953f1fb3-2059-46dd-b8e1-ef9b9d902552")
 	)
 	(label "TX_UART"
 		(at 165.1 81.28 180)
@@ -3909,7 +3983,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "024b29f2-b594-4021-9d7a-49eface9738d")
-		(property "Reference" "C8"
+		(property "Reference" "C18"
 			(at 224.79 122.428 90)
 			(effects
 				(font
@@ -3961,7 +4035,7 @@
 		(instances
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "C8")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -3976,7 +4050,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0688bd48-80f1-40d8-a12c-c411079572c8")
-		(property "Reference" "TP16"
+		(property "Reference" "TP15"
 			(at 194.818 147.828 90)
 			(effects
 				(font
@@ -4033,7 +4107,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "TP16")
+					(reference "TP15")
 					(unit 1)
 				)
 			)
@@ -4048,7 +4122,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "09322383-9f20-41d8-8843-a938c324a47d")
-		(property "Reference" "R23"
+		(property "Reference" "R30"
 			(at 211.074 136.144 90)
 			(effects
 				(font
@@ -4106,7 +4180,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "R23")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -4121,7 +4195,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0e86c116-f019-4bfb-97e4-a70c709e0bed")
-		(property "Reference" "R24"
+		(property "Reference" "R31"
 			(at 211.074 138.684 90)
 			(effects
 				(font
@@ -4179,7 +4253,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "R24")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -4195,7 +4269,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1106d10f-416b-4915-a49e-4158bd417d6a")
-		(property "Reference" "U7"
+		(property "Reference" "U6"
 			(at 105.0133 53.34 0)
 			(effects
 				(font
@@ -4366,7 +4440,7 @@
 			)
 			(project ""
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "U7")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -4451,7 +4525,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2190c025-0162-465a-bf50-de4b01d6aeb0")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR027"
 			(at 55.88 34.29 0)
 			(effects
 				(font
@@ -4501,7 +4575,7 @@
 		(instances
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "#PWR036")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -4517,7 +4591,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2741a50a-545c-4119-99a6-8faa8632d425")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR028"
 			(at 187.96 49.53 0)
 			(effects
 				(font
@@ -4573,7 +4647,7 @@
 			)
 			(project ""
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "#PWR037")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -4588,7 +4662,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2dc64c2d-3ce1-4f17-833c-65a9fac0a4e6")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR033"
 			(at 205.74 80.01 0)
 			(effects
 				(font
@@ -4644,7 +4718,7 @@
 			)
 			(project ""
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "#PWR021")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -4659,7 +4733,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "30dc2e7c-1fe0-4afa-83b9-724f0c32821c")
-		(property "Reference" "R16"
+		(property "Reference" "R19"
 			(at 128.524 76.708 90)
 			(effects
 				(font
@@ -4718,7 +4792,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "R16")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -4733,7 +4807,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "31223fa6-1acc-4db7-ba15-a2e05bc64f5c")
-		(property "Reference" "C16"
+		(property "Reference" "C15"
 			(at 224.79 108.458 90)
 			(effects
 				(font
@@ -4791,7 +4865,7 @@
 			)
 			(project ""
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "C16")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -4806,7 +4880,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "344b76c6-167b-41b1-abf4-dbcf5366afe1")
-		(property "Reference" "R22"
+		(property "Reference" "R29"
 			(at 211.074 133.604 90)
 			(effects
 				(font
@@ -4864,7 +4938,7 @@
 			)
 			(project ""
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "R22")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -4880,7 +4954,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "35f9bd1e-ad66-4441-8c43-093f0d391525")
-		(property "Reference" "H5"
+		(property "Reference" "H3"
 			(at 44.45 119.3799 0)
 			(effects
 				(font
@@ -4928,7 +5002,7 @@
 		(instances
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "H5")
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -4944,7 +5018,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "379548b9-e728-44e0-8b14-fd0d89481263")
-		(property "Reference" "U8"
+		(property "Reference" "U7"
 			(at 230.7433 127 0)
 			(effects
 				(font
@@ -5049,7 +5123,7 @@
 			)
 			(project ""
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "U8")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -5225,7 +5299,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c57aaf2-fd5c-4afc-89f3-41b7a16d5d7c")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR037"
 			(at 212.09 118.11 0)
 			(effects
 				(font
@@ -5282,7 +5356,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "#PWR050")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -5298,7 +5372,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3fd95cab-3aa6-4d5b-aea0-a8e524beb405")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR032"
 			(at 140.97 81.28 0)
 			(effects
 				(font
@@ -5356,7 +5430,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "#PWR041")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -5371,7 +5445,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4087f45f-33a4-47c4-acc5-589f6fff63df")
-		(property "Reference" "C7"
+		(property "Reference" "C14"
 			(at 211.074 90.424 0)
 			(effects
 				(font
@@ -5429,7 +5503,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "C7")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -5445,7 +5519,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "42e513b2-5cb4-4c0e-8d7d-edad77d21444")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR035"
 			(at 140.97 101.6 0)
 			(effects
 				(font
@@ -5503,7 +5577,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "#PWR044")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -5519,7 +5593,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "438f6d34-e19a-430b-9e31-ccbcad17ec4a")
-		(property "Reference" "H3"
+		(property "Reference" "H1"
 			(at 44.45 107.9499 0)
 			(effects
 				(font
@@ -5567,7 +5641,7 @@
 		(instances
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "H3")
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -5582,7 +5656,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "440080d4-c874-44b2-87eb-0882cc12a157")
-		(property "Reference" "R18"
+		(property "Reference" "R23"
 			(at 128.524 84.328 90)
 			(effects
 				(font
@@ -5641,7 +5715,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "R18")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -5742,7 +5816,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4c3bd7fd-4470-40c5-89c1-53a486fd6ed5")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR038"
 			(at 129.54 132.08 0)
 			(effects
 				(font
@@ -5798,7 +5872,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "#PWR045")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -5813,7 +5887,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4ea73987-cc9a-41fe-85eb-cbe458d42ebd")
-		(property "Reference" "TP2"
+		(property "Reference" "TP11"
 			(at 179.07 75.438 0)
 			(effects
 				(font
@@ -5870,7 +5944,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "TP2")
+					(reference "TP11")
 					(unit 1)
 				)
 			)
@@ -5885,7 +5959,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4fcc94fe-9d17-47b7-bec4-00115c872d2e")
-		(property "Reference" "TP14"
+		(property "Reference" "TP13"
 			(at 200.152 130.302 0)
 			(effects
 				(font
@@ -5942,7 +6016,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "TP14")
+					(reference "TP13")
 					(unit 1)
 				)
 			)
@@ -5958,7 +6032,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d682a3d-be7c-43d7-b260-9d67f3228b75")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR031"
 			(at 140.97 78.74 0)
 			(effects
 				(font
@@ -6016,7 +6090,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "#PWR040")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -6106,7 +6180,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5e6b64bb-a038-4f06-9a17-9bdfeb39ef79")
-		(property "Reference" "R17"
+		(property "Reference" "R21"
 			(at 122.174 76.708 90)
 			(effects
 				(font
@@ -6165,7 +6239,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "R17")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -6181,7 +6255,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6338b46f-f4be-4988-911e-48a1d34555c2")
-		(property "Reference" "C15"
+		(property "Reference" "C17"
 			(at 140.97 124.4599 0)
 			(effects
 				(font
@@ -6241,7 +6315,7 @@
 			)
 			(project ""
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "C15")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -6492,7 +6566,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "70e912e3-cc27-49d5-b188-7fb3623e97d6")
-		(property "Reference" "R31"
+		(property "Reference" "R20"
 			(at 217.424 72.644 90)
 			(effects
 				(font
@@ -6550,7 +6624,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "R31")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -6635,7 +6709,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c6bebcf-a8c1-4789-adb2-81d885954c1e")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR030"
 			(at 140.97 73.66 0)
 			(effects
 				(font
@@ -6693,7 +6767,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "#PWR039")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -6709,7 +6783,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7cc061e0-88e1-4d07-a656-4bd7b818f912")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR034"
 			(at 138.43 91.44 0)
 			(effects
 				(font
@@ -6767,7 +6841,7 @@
 			)
 			(project ""
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "#PWR042")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -6782,7 +6856,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "821d9efc-73f2-43f2-a6fa-c88062da70d1")
-		(property "Reference" "R19"
+		(property "Reference" "R25"
 			(at 128.27 86.106 90)
 			(effects
 				(font
@@ -6840,7 +6914,7 @@
 			)
 			(project ""
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "R19")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -6855,7 +6929,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "832cf555-6baa-45ef-ad02-933db2c5017b")
-		(property "Reference" "R25"
+		(property "Reference" "R22"
 			(at 175.514 77.724 90)
 			(effects
 				(font
@@ -6913,7 +6987,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "R25")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -6928,7 +7002,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8553e49a-c07c-426a-8164-7591ee1187c4")
-		(property "Reference" "R14"
+		(property "Reference" "R16"
 			(at 38.1 48.768 90)
 			(effects
 				(font
@@ -6980,7 +7054,7 @@
 		(instances
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "R14")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -6996,7 +7070,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "863803b8-44f9-4f12-82e1-04717ce8e19c")
-		(property "Reference" "H4"
+		(property "Reference" "H2"
 			(at 44.45 113.0299 0)
 			(effects
 				(font
@@ -7044,7 +7118,7 @@
 		(instances
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "H4")
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -7060,7 +7134,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87b3dff0-d132-4433-9b7c-e106c2e16601")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR036"
 			(at 212.09 111.76 0)
 			(effects
 				(font
@@ -7117,7 +7191,7 @@
 			)
 			(project ""
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "#PWR049")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -7207,7 +7281,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8ab6c508-7d52-4f96-9517-69af87fecc99")
-		(property "Reference" "R32"
+		(property "Reference" "R26"
 			(at 199.39 92.202 90)
 			(effects
 				(font
@@ -7265,7 +7339,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "R32")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -7281,7 +7355,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8bcc6347-55eb-472f-a3e3-86a59989704c")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR029"
 			(at 140.97 71.12 0)
 			(effects
 				(font
@@ -7339,7 +7413,7 @@
 			)
 			(project ""
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "#PWR038")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -7354,7 +7428,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8c703710-8937-4369-9540-8f94ada1114d")
-		(property "Reference" "R21"
+		(property "Reference" "R28"
 			(at 139.7 116.8399 0)
 			(effects
 				(font
@@ -7414,7 +7488,7 @@
 			)
 			(project ""
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "R21")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -7430,7 +7504,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9462840d-b687-4eed-be0f-a24a0774e734")
-		(property "Reference" "H6"
+		(property "Reference" "H4"
 			(at 44.45 125.7299 0)
 			(effects
 				(font
@@ -7478,7 +7552,7 @@
 		(instances
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "H6")
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -7493,7 +7567,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9fa1221e-bdd9-4801-ab61-2d78172f65d3")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR042"
 			(at 226.06 162.56 0)
 			(effects
 				(font
@@ -7549,7 +7623,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "#PWR048")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -7649,7 +7723,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a81480f8-14f5-4c3e-bc7d-9a554af6b90b")
-		(property "Reference" "TP12"
+		(property "Reference" "TP9"
 			(at 206.248 69.342 0)
 			(effects
 				(font
@@ -7706,7 +7780,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "TP12")
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -7722,7 +7796,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b10dfa70-4001-4d81-85a6-f080ce979dde")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR039"
 			(at 212.09 125.73 0)
 			(effects
 				(font
@@ -7773,7 +7847,7 @@
 		(instances
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "#PWR029")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -7788,7 +7862,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b3502cf9-9c3f-4f33-b3be-2f9eb32638af")
-		(property "Reference" "R15"
+		(property "Reference" "R17"
 			(at 122.174 69.088 90)
 			(effects
 				(font
@@ -7847,7 +7921,7 @@
 			)
 			(project ""
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "R15")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -7863,7 +7937,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bd413194-493a-4128-94c2-c8547ef5ec18")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR041"
 			(at 137.16 135.89 0)
 			(effects
 				(font
@@ -7919,7 +7993,7 @@
 			)
 			(project ""
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "#PWR047")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -7935,7 +8009,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c163739d-66ee-449f-8d56-986b28848326")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR040"
 			(at 102.87 133.35 0)
 			(effects
 				(font
@@ -7991,7 +8065,7 @@
 			)
 			(project ""
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "#PWR046")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -8006,7 +8080,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c2dbaf40-d647-4c94-930a-f10cf96caa40")
-		(property "Reference" "TP1"
+		(property "Reference" "TP12"
 			(at 168.91 84.582 0)
 			(effects
 				(font
@@ -8063,7 +8137,7 @@
 			)
 			(project ""
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "TP1")
+					(reference "TP12")
 					(unit 1)
 				)
 			)
@@ -8078,7 +8152,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c9011638-e0a2-4526-8e8a-4e5816450ab7")
-		(property "Reference" "R20"
+		(property "Reference" "R27"
 			(at 128.524 104.648 90)
 			(effects
 				(font
@@ -8137,7 +8211,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "R20")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -8387,7 +8461,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e5c282cb-d0dd-4f30-b2f8-3368d85a5926")
-		(property "Reference" "C17"
+		(property "Reference" "C16"
 			(at 224.79 114.808 90)
 			(effects
 				(font
@@ -8445,7 +8519,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "C17")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -8460,7 +8534,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "efb35d77-706b-48a8-a5c6-617faca9e7cb")
-		(property "Reference" "TP15"
+		(property "Reference" "TP14"
 			(at 202.438 142.748 0)
 			(effects
 				(font
@@ -8517,7 +8591,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "TP15")
+					(reference "TP14")
 					(unit 1)
 				)
 			)
@@ -8532,7 +8606,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f0d7c524-79c3-4d52-8c5d-76b414fdda81")
-		(property "Reference" "TP13"
+		(property "Reference" "TP10"
 			(at 201.168 76.962 0)
 			(effects
 				(font
@@ -8589,7 +8663,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "TP13")
+					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -8604,7 +8678,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f3898a2d-2f16-469f-adeb-70e8bdb24e0a")
-		(property "Reference" "R26"
+		(property "Reference" "R24"
 			(at 175.514 80.264 90)
 			(effects
 				(font
@@ -8662,7 +8736,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "R26")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -8678,7 +8752,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa960880-f763-4a34-8a14-51bd4347b869")
-		(property "Reference" "U6"
+		(property "Reference" "U5"
 			(at 185.8167 55.88 0)
 			(effects
 				(font
@@ -8763,7 +8837,7 @@
 			)
 			(project ""
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "U6")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -8778,7 +8852,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fee0460d-2470-4a0c-abf4-9ac813ef414b")
-		(property "Reference" "R30"
+		(property "Reference" "R18"
 			(at 217.424 70.104 90)
 			(effects
 				(font
@@ -8836,7 +8910,7 @@
 			)
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "R30")
+					(reference "R18")
 					(unit 1)
 				)
 			)

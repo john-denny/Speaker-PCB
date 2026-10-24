@@ -58,16 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "lib_footprint_mismatch|238180000|68012500|e944f68a-6f05-4b19-a545-9ce607b9362c|00000000-0000-0000-0000-000000000000",
-          "Made some modifications to individual pin clearances"
-        ],
-        [
-          "lib_footprint_mismatch|246599250|89867500|bcc375a8-8d87-46c9-90ee-0d344ffd28f7|00000000-0000-0000-0000-000000000000",
-          "Made some modifications to individual pin clearances"
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -239,7 +230,23 @@
       "mfg": "",
       "mpn": ""
     },
-    "layer_pairs": [],
+    "layer_pairs": [
+      {
+        "bottomLayer": 6,
+        "enabled": false,
+        "topLayer": 0
+      },
+      {
+        "bottomLayer": 4,
+        "enabled": true,
+        "topLayer": 0
+      },
+      {
+        "bottomLayer": 2,
+        "enabled": false,
+        "topLayer": 0
+      }
+    ],
     "layer_presets": [],
     "viewports": []
   },
@@ -495,14 +502,38 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "name": "PWR_Main",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.45,
+        "via_diameter": 0.6,
+        "via_drill": 0.3
       }
     ],
     "meta": {
       "version": 4
     },
-    "net_colors": null,
+    "net_colors": {
+      "GND": "rgb(255, 130, 0)"
+    },
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "PWR_Main",
+        "pattern": "V*"
+      },
+      {
+        "netclass": "PWR_Main",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "PWR_Main",
+        "pattern": "/Power/USB*"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
