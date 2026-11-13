@@ -2368,6 +2368,217 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Transistor_BJT:Q_NPN_BEC"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Q_NPN_BEC"
+				(at 5.08 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "NPN transistor, base/emitter/collector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "NPN"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=B 2=E 3=C"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "BJT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Q_NPN_BEC_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 0.635 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Q_NPN_BEC_1_1"
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -2681,6 +2892,12 @@
 		(uuid "b17d5917-53aa-4369-a792-150f64e9746f")
 	)
 	(junction
+		(at 170.18 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b66b1912-1be7-4a9c-a0f7-10c1ef99faf9")
+	)
+	(junction
 		(at 243.84 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2761,10 +2978,6 @@
 	(no_connect
 		(at 87.63 96.52)
 		(uuid "9c12aa59-80c3-4181-966f-f7cedd95926a")
-	)
-	(no_connect
-		(at 177.8 73.66)
-		(uuid "ad1ce7cd-f968-43d2-9ae6-66202b2e8ec7")
 	)
 	(wire
 		(pts
@@ -2858,13 +3071,23 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 66.04) (xy 167.64 66.04)
+			(xy 207.01 50.8) (xy 213.36 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1d5065b1-eced-4ee3-9761-38142737f425")
+		(uuid "1d594a91-48de-4eaa-8447-d55182a2ee5d")
+	)
+	(wire
+		(pts
+			(xy 132.08 46.99) (xy 132.08 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1daefa25-5597-4af8-bad4-fd96fb7060cf")
 	)
 	(wire
 		(pts
@@ -2885,6 +3108,16 @@
 			(type default)
 		)
 		(uuid "1e3ff3ff-840a-42e1-a381-57ff911b752f")
+	)
+	(wire
+		(pts
+			(xy 149.86 48.26) (xy 149.86 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "211903e3-2b56-420d-abda-4f6929949363")
 	)
 	(wire
 		(pts
@@ -2978,6 +3211,26 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 66.04) (xy 170.18 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34f92119-49cd-4821-8d83-bc97d6031fcc")
+	)
+	(wire
+		(pts
+			(xy 170.18 66.04) (xy 177.8 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35e4f5f3-5f16-46e6-b2a1-eb9936ef82c5")
+	)
+	(wire
+		(pts
 			(xy 228.6 111.76) (xy 228.6 118.11)
 		)
 		(stroke
@@ -3025,6 +3278,16 @@
 			(type default)
 		)
 		(uuid "3d2e54bb-b754-4e27-af1b-3ebe7e652a6f")
+	)
+	(wire
+		(pts
+			(xy 132.08 35.56) (xy 132.08 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e713735-8296-4fca-a9e2-d9cfc090f48d")
 	)
 	(wire
 		(pts
@@ -3098,6 +3361,26 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 55.88) (xy 229.87 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6adeee81-c847-42f0-ba38-ab67c32f159c")
+	)
+	(wire
+		(pts
+			(xy 220.98 26.67) (xy 229.87 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dec5c91-0397-4029-9cbf-7d941ccbcd1b")
+	)
+	(wire
+		(pts
 			(xy 55.88 40.64) (xy 53.34 40.64)
 		)
 		(stroke
@@ -3125,6 +3408,16 @@
 			(type default)
 		)
 		(uuid "727591f8-32a2-458e-988a-678cbfca82e0")
+	)
+	(wire
+		(pts
+			(xy 220.98 36.83) (xy 229.87 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74fcf106-bec7-4c19-8cd7-4a5d07140737")
 	)
 	(wire
 		(pts
@@ -3238,13 +3531,23 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 60.96) (xy 167.64 60.96)
+			(xy 170.18 60.96) (xy 177.8 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "94693850-3018-4b9a-877f-1a11e3811e3f")
+		(uuid "9789f164-d5d7-4289-a9c6-8a16a81c8ac1")
+	)
+	(wire
+		(pts
+			(xy 118.11 60.96) (xy 123.19 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a158c2da-f814-4879-a4c4-838c100b6a83")
 	)
 	(wire
 		(pts
@@ -3318,13 +3621,13 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 60.96) (xy 177.8 60.96)
+			(xy 207.01 31.75) (xy 213.36 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b80ff449-c92b-4378-a519-135a4c1d17b2")
+		(uuid "b788b50a-1947-4a72-86a4-3b12c950c715")
 	)
 	(wire
 		(pts
@@ -3398,6 +3701,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 45.72) (xy 229.87 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc3507ff-97ab-434e-95e2-0c7447a7bbc0")
+	)
+	(wire
+		(pts
 			(xy 121.92 63.5) (xy 118.11 63.5)
 		)
 		(stroke
@@ -3415,16 +3728,6 @@
 			(type default)
 		)
 		(uuid "e580cfad-4644-4f1b-b0e9-7adaf0bd6b35")
-	)
-	(wire
-		(pts
-			(xy 175.26 66.04) (xy 177.8 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea8efbf6-8bc8-4906-a7a8-ddf47214ac7e")
 	)
 	(wire
 		(pts
@@ -3455,6 +3758,16 @@
 			(type default)
 		)
 		(uuid "eec4ee8c-9fed-421e-8e44-cf951a216960")
+	)
+	(wire
+		(pts
+			(xy 170.18 73.66) (xy 177.8 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efa262e7-0486-45b4-b15b-e87983648d67")
 	)
 	(wire
 		(pts
@@ -3516,6 +3829,16 @@
 		)
 		(uuid "faa9af19-5335-4fb5-b3d6-5cce3782cd50")
 	)
+	(label "ESP_BOOT"
+		(at 229.87 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "02811fde-2bc2-4e06-adcc-1700bec96534")
+	)
 	(label "AMP_DIN"
 		(at 196.85 134.62 180)
 		(effects
@@ -3525,6 +3848,16 @@
 			(justify right bottom)
 		)
 		(uuid "0a5ab017-a811-42f1-9771-fe3aefde1d26")
+	)
+	(label "ESP_BOOT"
+		(at 149.86 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1f69b2a4-1257-4303-8415-d88376b386ce")
 	)
 	(label "Speaker+"
 		(at 243.84 130.81 0)
@@ -3546,6 +3879,26 @@
 		)
 		(uuid "201ea164-90df-40a7-8ac3-e794df442ea7")
 	)
+	(label "AUTO_RTS_N"
+		(at 229.87 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "22822f59-806c-4f94-a543-2ab0530351d8")
+	)
+	(label "ESP_BOOT"
+		(at 132.08 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "22f18139-b390-47b9-a015-8a2009f7962d")
+	)
 	(label "AMP_BCLK"
 		(at 118.11 106.68 0)
 		(effects
@@ -3566,6 +3919,16 @@
 		)
 		(uuid "3fa36711-e6e1-4ab1-8cd3-780cca599ecb")
 	)
+	(label "AUTO_DTR_N"
+		(at 167.64 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4254c670-f1cb-4768-8eb8-604af7a5dcb7")
+	)
 	(label "TX_UART"
 		(at 121.92 68.58 0)
 		(effects
@@ -3585,6 +3948,16 @@
 			(justify right bottom)
 		)
 		(uuid "683c5d05-5ce4-467a-b7c7-31260e855cdd")
+	)
+	(label "AUTO_DTR_N"
+		(at 199.39 31.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8610127d-f14f-4e4e-af83-a4a177ee3804")
 	)
 	(label "AMP_SDM"
 		(at 118.11 114.3 0)
@@ -3615,6 +3988,46 @@
 			(justify left bottom)
 		)
 		(uuid "953f1fb3-2059-46dd-b8e1-ef9b9d902552")
+	)
+	(label "AUTO_RTS_N"
+		(at 170.18 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b3ccec1b-86f4-4406-85ce-d7cf8ee8a2b1")
+	)
+	(label "AUTO_RTS_N"
+		(at 199.39 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bce0f3f5-0c5d-4564-a2a2-9acbc49ec85d")
+	)
+	(label "AUTO_DTR_N"
+		(at 229.87 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dae73e38-35ef-4cd3-850a-87d51cbd67bc")
+	)
+	(label "ESP_BOOT"
+		(at 123.19 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "df3b253f-c6ae-4a73-b92b-d41167cded06")
 	)
 	(label "TX_UART"
 		(at 165.1 81.28 180)
@@ -3735,28 +4148,6 @@
 		(uuid "605bd1c1-f1ee-41fd-ae43-da9c732ad29e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 78.295 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Enable"
-		(shape input)
-		(at 166.37 66.04 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "653660e7-1444-448e-8a5d-f47241881ab8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 157.035 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3920,6 +4311,28 @@
 			)
 		)
 	)
+	(global_label "Enable"
+		(shape input)
+		(at 229.87 26.67 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dcc534a7-4088-4a99-affb-0bdb8a0af368")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 220.535 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "D+"
 		(shape input)
 		(at 220.98 73.66 0)
@@ -3933,6 +4346,28 @@
 		(uuid "eaf6035b-6a8b-48e5-a2f3-9fdc20b23db4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 226.8076 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VREG_3.3V"
+		(shape input)
+		(at 132.08 35.56 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fffcb5f6-3eca-4e3c-a122-b64ed2508ca1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 132.08 22.7172 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4019,6 +4454,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 224.79 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C1636"
+			(at 228.6 124.7648 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4165,6 +4609,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C21189"
+			(at 205.74 138.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "08fdda36-2b54-47fa-8658-a3ae3519dde0")
 		)
@@ -4181,6 +4634,84 @@
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
 					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 132.08 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0a6c684b-13ea-4053-91fc-18359e0c3894")
+		(property "Reference" "R35"
+			(at 134.62 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 132.08 44.958 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 130.302 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132.08 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 132.08 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C25804"
+			(at 130.302 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "96d0cce8-9fa5-48a3-911a-d2024536e8e4")
+		)
+		(pin "2"
+			(uuid "3d1a696c-e2e7-42fe-ac47-1b8f428fcbff")
+		)
+		(instances
+			(project "Speaker"
+				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -4231,6 +4762,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 205.74 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C21189"
+			(at 205.74 141.478 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4306,6 +4846,15 @@
 			)
 		)
 		(property "Description" "RF Module, ESP32-D0WDQ6 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, onboard antenna, SMD"
+			(at 102.87 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C701342"
 			(at 102.87 91.44 0)
 			(effects
 				(font
@@ -4447,6 +4996,151 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 203.2 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1521eaf0-2c9c-4114-affc-9655e07b7cf0")
+		(property "Reference" "R33"
+			(at 203.2 48.768 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 203.454 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 203.2 52.578 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 203.2 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 203.2 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C25804"
+			(at 203.2 52.578 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be757131-5677-4c85-a14a-7b7b669d6374")
+		)
+		(pin "2"
+			(uuid "ea7fb601-3ce9-4e26-990b-7a664e840811")
+		)
+		(instances
+			(project "Speaker"
+				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
+					(reference "R33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 149.86 43.18 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "16203a6e-0676-4d7e-8401-a2ce3884ed69")
+		(property "Reference" "SW6"
+			(at 147.066 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BOOT"
+			(at 150.114 46.736 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_B3U-1000P"
+			(at 154.94 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 149.86 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ae8fb196-fd38-4d16-85df-b4438bf7dd9c")
+		)
+		(pin "2"
+			(uuid "47e25d56-81ff-4004-94c1-5c0ca30569cd")
+		)
+		(instances
+			(project "Speaker"
+				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
+					(reference "SW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 59.69 45.72 270)
 		(unit 1)
@@ -4510,6 +5204,77 @@
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
 					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:Q_NPN_BEC")
+		(at 218.44 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "215eaaa9-cdf2-4a8a-841a-ba42ea3f3af1")
+		(property "Reference" "Q1"
+			(at 223.52 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMBT3904"
+			(at 223.52 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 218.44 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf"
+			(at 218.44 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 218.44 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7d8ee8d9-e4f4-4a59-9f99-cc0b7a2a9b84")
+		)
+		(pin "2"
+			(uuid "d2b19019-24e2-465d-a92a-bacb15ea3bbd")
+		)
+		(pin "3"
+			(uuid "32ef0dc0-1390-42d0-a432-47384140045d")
+		)
+		(instances
+			(project "Speaker"
+				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -4742,7 +5507,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "1k"
 			(at 121.92 73.66 90)
 			(effects
 				(font
@@ -4770,6 +5535,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 121.92 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C21190"
+			(at 121.92 75.438 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4850,6 +5624,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C96446"
+			(at 228.6 110.7948 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c8f0f118-32dc-42fa-898d-7f8838341224")
 		)
@@ -4916,6 +5699,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 205.74 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C21189"
+			(at 205.74 136.398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5055,6 +5847,15 @@
 			)
 		)
 		(property "Description" "Mono DAC with amplifier, I2S, PCM, TDM, 32-bit, 96khz, 3.2W, TQFP-16"
+			(at 228.6 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C910544"
 			(at 228.6 142.24 0)
 			(effects
 				(font
@@ -5488,6 +6289,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C14663"
+			(at 206.7052 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "69e8c4c4-0913-4beb-886f-dcede53e8621")
 		)
@@ -5665,7 +6475,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "1k"
 			(at 121.92 81.28 90)
 			(effects
 				(font
@@ -5693,6 +6503,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 121.92 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C21190"
+			(at 121.92 83.058 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6189,7 +7008,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "1k"
 			(at 121.92 78.74 90)
 			(effects
 				(font
@@ -6217,6 +7036,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 121.92 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C21190"
+			(at 121.92 80.518 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6293,6 +7121,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 137.16 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C14663"
+			(at 138.1252 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6483,81 +7320,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 171.45 60.96 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6e00fc61-9d92-4cfb-979e-bb19c945c951")
-		(property "Reference" "C12"
-			(at 170.18 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 178.562 59.944 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 175.26 59.9948 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 171.45 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 171.45 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "dbb7913e-25dc-4f9c-8ad0-9ce8237ce614")
-		)
-		(pin "1"
-			(uuid "ff30469d-c203-4253-bd10-9425bab18023")
-		)
-		(instances
-			(project "mcu"
-				(path "/9e3f31bd-ea4a-4176-a948-2a6c20b65f3d"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-			(project "Speaker"
-				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 212.09 73.66 90)
 		(unit 1)
@@ -6609,6 +7371,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C21189"
+			(at 212.09 75.438 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2740ac93-0943-40f3-a406-2f5adafaa017")
 		)
@@ -6625,6 +7396,82 @@
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
 					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 203.2 31.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7137577c-2b94-431c-8f1e-8747ca0c06e4")
+		(property "Reference" "R32"
+			(at 203.2 29.718 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 203.454 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 203.2 33.528 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 203.2 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 203.2 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C25804"
+			(at 203.2 33.528 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d14765f-bfef-4474-ba37-31084225b8a2")
+		)
+		(pin "2"
+			(uuid "6f5fcfc8-4818-4252-9f73-3d0c868877bd")
+		)
+		(instances
+			(project "Speaker"
+				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -6648,7 +7495,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "1uF"
 			(at 44.45 44.45 0)
 			(effects
 				(font
@@ -6677,6 +7524,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 53.34 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C15849"
+			(at 54.3052 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6899,6 +7755,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C25804"
+			(at 128.27 85.598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3dc639f5-62eb-4ad5-9fc7-4ac4d2f04429")
 		)
@@ -6972,6 +7837,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C21189"
+			(at 170.18 80.518 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7997b106-1203-43a7-80f1-afab80dba1e8")
 		)
@@ -7038,6 +7912,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 38.1 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C25804"
+			(at 38.1 52.578 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7198,81 +8081,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 171.45 66.04 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "87f12d79-96e2-4635-b197-6c0df3c7dd34")
-		(property "Reference" "C13"
-			(at 170.18 67.31 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 178.562 64.516 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 175.26 65.0748 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 171.45 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 171.45 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "db522f2d-479d-4d8b-b02a-9a056559443b")
-		)
-		(pin "1"
-			(uuid "1d3f9dd1-b7e6-4e5f-b376-88b7c59f5bcb")
-		)
-		(instances
-			(project "mcu"
-				(path "/9e3f31bd-ea4a-4176-a948-2a6c20b65f3d"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-			(project "Speaker"
-				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
-					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 194.31 93.98 90)
 		(unit 1)
@@ -7317,6 +8125,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 194.31 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C21189"
+			(at 194.31 95.758 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7466,6 +8283,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 137.16 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C25804"
+			(at 135.382 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7871,7 +8697,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "1k"
 			(at 121.92 71.12 90)
 			(effects
 				(font
@@ -7906,6 +8732,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C21190"
+			(at 121.92 72.898 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d1e62f84-9f93-4ff6-8926-75ca915ef8a2")
 		)
@@ -7922,6 +8757,84 @@
 			(project ""
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
 					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 170.18 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b9556d4c-002b-4b70-a408-feb9360140d9")
+		(property "Reference" "R34"
+			(at 172.72 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 170.18 71.628 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 168.402 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 170.18 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C23162"
+			(at 168.402 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8145e112-5670-415b-802d-dd7c9d49ec3c")
+		)
+		(pin "2"
+			(uuid "4b140314-c0a0-4e44-bf84-686ef84f11ed")
+		)
+		(instances
+			(project "Speaker"
+				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -8161,7 +9074,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "1k"
 			(at 121.92 101.6 90)
 			(effects
 				(font
@@ -8189,6 +9102,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 121.92 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C21190"
+			(at 121.92 103.378 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8378,6 +9300,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:Q_NPN_BEC")
+		(at 218.44 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dea3236b-dabc-4750-a292-295a74fe5ee2")
+		(property "Reference" "Q2"
+			(at 223.52 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMBT3904"
+			(at 223.52 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 218.44 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf"
+			(at 218.44 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 218.44 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "02501fea-33c4-42e4-a543-7118aba27606")
+		)
+		(pin "2"
+			(uuid "83792292-f85f-43ee-8a4a-d5b24792ac3a")
+		)
+		(pin "3"
+			(uuid "751f5756-2641-49e2-8374-433e31910ba5")
+		)
+		(instances
+			(project "Speaker"
+				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 124.46 91.44 0)
 		(unit 1)
@@ -8504,6 +9497,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C14663"
+			(at 228.6 117.1448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0cf27f65-b262-42fa-80e2-f989eb98c2a1")
 		)
@@ -8592,6 +9594,72 @@
 			(project "Speaker"
 				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
 					(reference "TP14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 149.86 38.1 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f0be91c2-a31e-4fdc-ada6-a9b82cf42f57")
+		(property "Reference" "#PWR050"
+			(at 149.86 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 149.86 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 149.86 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5d726f1f-9980-4919-a137-587851fc1ca3")
+		)
+		(instances
+			(project "Speaker"
+				(path "/c0597dd0-4d0e-452e-9261-43f7671870ce/0280f4ee-456a-4db6-8d2e-4911c4be988e"
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -8721,6 +9789,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C21189"
+			(at 170.18 83.058 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ee919a68-b881-4c3f-a2b9-3c46ecc9cb93")
 		)
@@ -8790,6 +9867,15 @@
 			)
 		)
 		(property "Description" "USB serial converter, 5V-tolerant IO, UART, MSOP-10"
+			(at 187.96 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C3035748"
 			(at 187.96 71.12 0)
 			(effects
 				(font
@@ -8888,6 +9974,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 212.09 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C21189"
+			(at 212.09 72.898 0)
 			(effects
 				(font
 					(size 1.27 1.27)
